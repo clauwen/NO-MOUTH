@@ -3,3 +3,7 @@
   "view": "browser",
   "startRoute": "/index.html"
 }
+{
+  "view": "browser",
+  "startRoute": "/index.html"
+}
