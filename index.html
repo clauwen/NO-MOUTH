@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO MOUTH</title>
+     <link rel="icon" href="images/no mouth.jpg">
+     <link rel="stylesheet" href="Styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Mountains+of+Christmas:wght@400;700&display=swap" 
+     rel="stylesheet">
+</head>
+
+<body>
+
+    <h1> <span class="h1-hover">this site might be blocked due to illegal content, 
+      return for your own safety. click the image to continue.</span></h1>
+
+  <div class="next-page"> 
+    <a class="image-link" onclick="goToPage()">
+  <img src="images/no mouth.jpg" width="100px">
+</a>
+    <script>
+function goToPage() {
+  // Mark that user interacted
+  sessionStorage.setItem("playAudio", "yes");
+  window.location.href = 'index2.html';
+}
+</script>
+
+ </div>
+
+</body>
+</html>

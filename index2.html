@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO MOUTH</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-layer"></div>
+
+<div class="taskbar">
+    <a id="house" href="index.html"> 
+        <img src="images/no mouth.jpg" alt="home">
+    </a>
+
+   <form class="searchbar">
+    <input type="text" name="search" placeholder="Search. . ." />
+    <button type="submit" id="searchBtn">enter</button>
+</form>
+
+    <a href="index3.html">
+        about us
+    </a>
+</div>    
+
+    <audio loop controls>
+    <source src="ave maria.mp3" type="audio/mpeg">
+    your browser does not support audio
+    </audio>
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  if (sessionStorage.getItem("playAudio") === "yes") {
+    const audio = document.querySelector("audio");
+    audio.play().catch(err => {
+      console.warn("Autoplay blocked:", err);
+    });
+    sessionStorage.removeItem("playAudio");
+  }
+});
+</script>
+
+</body>
+</html>
+
+

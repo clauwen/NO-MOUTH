@@ -1,0 +1,54 @@
+h1 {
+font-family: Megrim;
+position: absolute;
+top: 30px;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+text-decoration: solid;
+color: white;
+font-size: 25px;
+}
+
+.h1-hover:hover {
+background-color: red;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("images/nm.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+img {
+    border-radius: 20px;
+    box-shadow: 
+    0 0 10px #D4A112,
+    0 0 20px #D4A112,
+    0 0 30px #D4A112;
+
+}
+.image-link {
+  display: inline-block;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fff;
+  transition: box-shadow 0.1s, transform 0.1s;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.image-link:active {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transform: scale(0.96);
+  background: #ffe066;
+}
